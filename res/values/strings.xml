@@ -12327,4 +12327,6 @@
     <string name="app_package_name_title">Package</string>
     <!-- Name of Refresh Rate controls category in Display Settings [CHAR LIMIT=none] -->
     <string name="category_name_refresh_rate_controls">Refresh Rate</string>
+    <!-- Max refresh rate -->
+    <string name="max_refresh_rate_title">Peak refresh rate</string>
 </resources>
