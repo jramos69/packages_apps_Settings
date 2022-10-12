@@ -656,4 +656,11 @@
     <!-- Control messages displayed during enrollment -->
     <bool name="enrollment_message_display_controller_flag">false</bool>
 
+    <!-- Whether to show the Preference for Touch Sensitivity -->
+    <bool name="config_show_touch_sensitivity">true</bool>
+    
+    <!-- Settings intelligence suggestions class -->
+    <string name="config_settingsintelligence_suggestions_class" translatable="false">
+        com.android.settings.intelligence.suggestions.SuggestionService
+    </string>
 </resources>
