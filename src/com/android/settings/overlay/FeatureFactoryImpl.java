@@ -74,6 +74,7 @@ import com.android.settings.users.UserFeatureProviderImpl;
 import com.android.settings.wifi.WifiTrackerLibProvider;
 import com.android.settings.wifi.WifiTrackerLibProviderImpl;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
+import com.google.android.settings.accounts.AccountFeatureProviderGoogleImpl;
 
 /**
  * {@link FeatureFactory} implementation for AOSP Settings.
@@ -257,7 +258,7 @@ public class FeatureFactoryImpl extends FeatureFactory {
     @Override
     public AccountFeatureProvider getAccountFeatureProvider() {
         if (mAccountFeatureProvider == null) {
-            mAccountFeatureProvider = new AccountFeatureProviderImpl();
+            mAccountFeatureProvider = new AccountFeatureProviderGoogleImpl();
         }
         return mAccountFeatureProvider;
     }
