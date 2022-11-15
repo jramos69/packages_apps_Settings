@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.statix.android.settings.gestures;
+package com.android.settings.gestures;
 
 import static android.provider.Settings.System.TORCH_POWER_BUTTON_GESTURE;
 

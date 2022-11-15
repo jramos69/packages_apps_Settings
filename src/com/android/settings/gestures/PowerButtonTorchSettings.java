@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.statix.android.settings.gestures;
+package com.android.settings.gestures;
 
 import android.content.Context;
 import android.os.Bundle;
