@@ -59,6 +59,12 @@
         android:title="@string/one_handed_title"
         android:fragment="com.android.settings.gestures.OneHandedSettings"
         settings:controller="com.android.settings.gestures.OneHandedEnablePreferenceController" />
+        
+    <Preference
+        android:key="power_button_torch_summary"
+        android:title="@string/power_button_torch_title"
+        android:fragment="com.statix.android.settings.gestures.PowerButtonTorchSettings"
+        settings:controller="com.statix.android.settings.gestures.PowerButtonTorchGesturePreferenceController" />
 
     <Preference
         android:key="gesture_tap_screen_input_summary"
