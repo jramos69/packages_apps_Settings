@@ -14426,4 +14426,8 @@
     <string name="keywords_touch_sensitivity">touch, sensitivity, sensitive, screen protector, film, responsive, responsiveness</string>
     <!-- Notification log -->
     <string name="notification_log_summary">Show notifications history log</string>
+    
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
+    <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
 </resources>
