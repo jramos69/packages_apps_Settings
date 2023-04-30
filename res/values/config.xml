@@ -656,4 +656,11 @@
     <string name="config_settingsintelligence_suggestions_class" translatable="false">
         com.google.android.settings.intelligence.modules.suggestions.SuggestionService
     </string>
+    
+    <!-- ComponentName to launch a vendor-specific enrollment activity if available -->
+    <string name="config_face_enroll">com.android.settings/com.stag.android.settings.biometrics.face.FaceEnrollActivityDirector</string>
+    <!-- Traffic light package to use -->
+    <string name="config_face_enroll_traffic_light_package" translatable="false"></string>
+    <!-- Whether or not to use traffic light enroll -->
+    <bool name="config_face_enroll_use_traffic_light">false</bool>
 </resources>
