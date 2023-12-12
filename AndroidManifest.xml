@@ -4966,6 +4966,37 @@
             android:name="androidx.startup.InitializationProvider"
             android:authorities="${applicationId}.androidx-startup"
             tools:node="remove" />
+        
+        <activity android:exported="true" android:name="com.google.android.settings.biometrics.face.FaceEnrollTrampoline" android:screenOrientation="portrait" android:theme="@style/SudThemeGlif.Light"/>
+        <activity android:exported="false" android:name="com.google.android.settings.biometrics.face.FaceEnrollEnrolling" android:screenOrientation="portrait" android:theme="@style/SudThemeGlif.Light"/>
+        <activity android:exported="false" android:name="com.google.android.settings.biometrics.face.FaceEnrollParticipation" android:screenOrientation="portrait" android:theme="@style/SudThemeGlif.Light"/>
+        <activity android:exported="true" android:name="com.google.android.settings.biometrics.face.FaceEnrollConfirmation" android:screenOrientation="portrait" android:theme="@style/SudThemeGlif.Light">
+            <intent-filter>
+                <action android:name="com.google.android.settings.action.CONFIRM_FACE_ENROLLMENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <!-- Face enroll -->
+        <activity android:theme="@style/SudThemeGlif.Light"
+                  android:name="com.statix.android.settings.biometrics.face.FaceEnrollActivityDirector"
+                  android:exported="true"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:theme="@style/SudThemeGlif.Light"
+                  android:name="com.google.android.settings.biometrics.face.FaceEnrollConfirmation"
+                  android:exported="true"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.google.android.settings.action.CONFIRM_FACE_ENROLLMENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
 
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
