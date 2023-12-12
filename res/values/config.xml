@@ -275,11 +275,14 @@
     <string name="config_contextual_card_feedback_email" translatable="false"></string>
 
     <!-- ComponentName to launch a vendor-specific enrollment activity if available -->
-    <string name="config_face_enroll" translatable="false"></string>
+    <string name="config_face_enroll" translatable="false">com.android.settings/com.statix.android.settings.biometrics.face.FaceEnrollActivityDirector</string>
 
     <!-- ComponentName to launch a vendor-specific posture guidance activity if available -->
-    <string name="config_face_enroll_guidance_page" translatable="false"></string>
+    <string name="config_face_enroll_guidance_page" translatable="false">com.android.settings/com.google.android.settings.biometrics.face.FaceEnrollFoldPage</string>
 
+    <!-- Traffic light package to use -->
+    <string name="config_face_enroll_traffic_light_package">com.google.android.settings.future.biometrics.faceenroll</string>
+    
     <!-- Whether to support posture listening for face auth, default is 0(DEVICE_POSTURE_UNKNOWN)
      means setting will try listening on device posture changes.
      0 : DEVICE_POSTURE_UNKNOWN
@@ -291,14 +294,16 @@
     <integer name="config_face_enroll_supported_posture">0</integer>
 
     <!-- Whether to show the "less secure" info section on the face enroll intro screen -->
-    <bool name="config_face_intro_show_less_secure">false</bool>
-
+    <bool name="config_face_intro_show_less_secure">true</bool>
+    
     <!-- Whether to show the "require eyes" info section on the face enroll intro screen -->
-    <bool name="config_face_intro_show_require_eyes">true</bool>
+    <bool name="config_face_intro_show_require_eyes">false</bool>
 
     <!-- Whether to use the Lottie animation for the face education enrollment screen -->
-    <bool name="config_face_education_use_lottie">false</bool>
+    <bool name="config_face_education_use_lottie">true</bool>
 
+    <bool name="config_face_enroll_use_traffic_light">true</bool>
+    
     <!-- Whether to support enrollment during setup wizard flow -->
     <bool name="config_suw_support_face_enroll">true</bool>
 

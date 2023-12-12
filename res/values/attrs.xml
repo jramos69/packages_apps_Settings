@@ -202,4 +202,6 @@
     <attr name="notification_importance_button_background_color_selected" format="color" />
     <attr name="notification_importance_button_border_color_selected" format="color" />
     <attr name="notification_importance_button_foreground_color_selected" format="color" />
+    
+    <attr name="secureValue" format="string" />
 </resources>
