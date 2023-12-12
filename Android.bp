@@ -104,6 +104,7 @@ android_library {
         "Settings-change-ids",
         "androidx.room_room-runtime",
         "SystemUIUnfoldLib",
+        "SettingsGoogle-lib",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],
@@ -152,6 +153,11 @@ filegroup {
     srcs: ["proguard.flags"],
 }
 
+java_import  {
+    name: "SettingsGoogle-lib",
+    sdk_version: "current",
+    jars: ["libs/SettingsGoogle-lib.jar"],
+}
 // Deprecated. The sources for Settings need to be exposed to ArcSettings, so they can run the
 // com.android.settingslib.search.IndexableProcessor over all the sources together.
 // Use "-Acom.android.settingslib.search.processor.package=" instead to generate the search data
